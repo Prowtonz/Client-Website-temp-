@@ -3,6 +3,7 @@
     <head lang="en">
         <title>Noah</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="../Images/favicon.ico">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -18,38 +19,49 @@
                         <div class="innerDecoration">
                             <p style="color: white; margin: 1% 0 0 0">Hello.</p>
                             <p style="color: white; margin: 0 0 1rem 0">I am Noah.</p>
-                            <a href="#" class="pageJump">Let's get things done.</a>
+                            <a href="#section-1" class="pageJump">Let's get things done.</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="navbar" id="navbar">
                 <div class="wrapping">
-                    <a class="active" href="javascript:void(0)">Bio</a>
+                    <a class="active" href="#section-1">Bio</a>
                 </div>
                 <div class="wrapping">
-                    <a href="javascript:void(0)">Accomplishments</a>
+                    <a href="javascript:void(0)" onclick="myAlert()">Accomplishments</a>
                 </div>
                 <div class="wrapping">
-                    <a href="javascript:void(0)">Experience</a>
+                    <a href="javascript:void(0)" onclick="myAlert()">Experience</a>
                 </div>
                 <div class="wrapping">
-                    <a href="javascript:void(0)">Skills</a>
+                    <a href="javascript:void(0)" onclick="myAlert()">Skills</a>
                 </div>
                 <div class="wrapping">
-                    <a href="javascript:void(0)">Fun</a>
+                    <a href="javascript:void(0)" onclick="myAlert()">Fun</a>
                 </div>            
             </div>
-            <div class="row" style="width: 100%; margin-left: 0">
-                <div class="col-lg-8" style="height: 100vh; text-align: center">
-                    <h1 class="header">Noah Torres</h1>
-                    <p class="timesNewRoman" style="margin-top: 20%">"Enthusiastic entrepreneur and academic<br>who is well versed in intercultural 
-                    fluency<br>and leadership strategy and tactics."</p>
-                </div>
-                <div class="col-lg-4" style="width: 100%; padding-right: 0; margin-right: 0">
-                    <img src="../Images/noah.jpeg" style="height: 100vh; width: 100%">
-                </div>
-            </div>
+            <main>
+                <section id="section-1">
+                    <div class="row" style="width: 100%; margin-left: 0; position: relative">
+                        <div class="stripe"></div>
+                        <div class="col-lg-8" style="height: 100vh; text-align: center">
+                            <h1 class="header">Noah Torres</h1>
+                            <h1 class="timesNewRoman">"Mr. Worldwide"</h1>
+                            <p class="timesNewRoman" style="font-size: 2rem; margin-top: 10%; color: white">"Enthusiastic entrepreneur and academic<br>who is well versed in intercultural 
+                            fluency<br>and leadership strategy and tactics."</p>
+                            <p class="spacedLetters">Introspective. Concise. Global. Dapper.</p>
+                        </div>
+                        <div class="col-lg-4" style="width: 100%; padding-right: 0; margin-right: 0">
+                            <div class="photograph-background show-on-scroll">
+                                <img src="../Images/noah.jpeg">
+                                <p class="bioStat">DOB: 12/22/2001</p>
+                                <p class="bioStat">Age: 18</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
         </div>
     </body>
 </html>
